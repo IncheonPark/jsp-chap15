@@ -30,7 +30,7 @@
 </head>
 
 <body>
-	<form action="wirteMessage.jsp" method="post">
+	<form action="writeMessage.jsp" method="post">
 	이름: <input type="text" name="guestName"> <br>
 	암호: <input type="password" name="password"> <br>
 	메시지: <textarea name="message" cols="30" rows="3"></textarea> <br>

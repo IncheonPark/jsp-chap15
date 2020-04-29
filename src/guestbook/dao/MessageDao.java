@@ -28,6 +28,8 @@ public class MessageDao {
 			pstmt.setString(2, message.getPassword());
 			pstmt.setString(3, message.getMessage());
 			return pstmt.executeUpdate();
+			
+			// catch를 지정하지 않아서 쿼리가 실행이 안되고 리턴 값이 0으로 나올 떄 '파라미터 인덱스 범위'를 벗어났다고 에러가 뜸.
 		}  finally {
 			JdbcUtil.close(pstmt);
 		}
